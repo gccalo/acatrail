@@ -2,14 +2,7 @@
 import { ref } from 'vue'
 
 const theme = ref('light')
-</script>
-
-<script>
-export default {
-  data: () => ({
-    visible: false,
-  }),
-}
+const visible = ref(false)
 </script>
 
 <template>
