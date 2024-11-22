@@ -2,13 +2,7 @@
 import { ref } from 'vue'
 
 const theme = ref('light')
-
-function onClick() {
-  theme.value = theme.value === 'light' ? 'dark' : 'light'
-}
-
-// Control bouncing
-const isBouncing = ref(true)
+const visible = ref(false)
 </script>
 
 <template>
@@ -21,8 +15,7 @@ const isBouncing = ref(true)
         >
           <v-row class="d-flex align-center justify-center" style="width: 100%">
             <v-col cols="12" md="6" class="mx-auto pb-16">
-              <!-- Add bouncing class dynamically -->
-              <v-img src="ew.png" alt="" height="300" :class="isBouncing ? 'bouncing' : ''" />
+              <v-img src="/ew.png" alt="" height="300" class="bouncing" />
               <h3 class="text-center">
                 It is your academic buddy. It will help you to organize tasks, assignments, and
                 projects, keeping them on track and focused throughout your academic journey.
@@ -33,6 +26,7 @@ const isBouncing = ref(true)
               <div>
                 <v-card class="mx-auto pa-12 pb-8" elevation="8" max-width="448" rounded="lg">
                   <h1 class="text-center">Register</h1>
+
                   <v-row class="pt-3">
                     <!-- First Name on the left -->
 
@@ -107,7 +101,7 @@ const isBouncing = ref(true)
 
 <style scoped>
 main {
-  background-image: url('/public/back_image.jpg');
+  background-image: url('/back_image.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
