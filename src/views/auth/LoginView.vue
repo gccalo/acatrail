@@ -2,7 +2,14 @@
 import { ref } from 'vue'
 
 const theme = ref('light')
-const visible = ref(false)
+</script>
+
+<script>
+export default {
+  data: () => ({
+    visible: false,
+  }),
+}
 </script>
 
 <template>
@@ -47,7 +54,7 @@ const visible = ref(false)
                     placeholder="Enter your password"
                     prepend-inner-icon="mdi-lock-outline"
                     variant="outlined"
-                    @click:append-inner="visible.value = !visible.value"
+                    @click:append-inner="visible = !visible"
                   ></v-text-field>
 
                   <v-btn class="mb-8" color="blue" size="large" block> Log In </v-btn>
