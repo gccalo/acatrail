@@ -29,7 +29,8 @@ export default {
               <v-img src="ew.png" alt="" height="300" />
               <h3 class="text-center">
                 It is your academic buddy. It will help you to organize tasks, assignments, and
-                projects, keeping them on track and focused throughout your academic journey.
+                projects, keeping them on track and focused throughout your academic
+                journey.fdsfsdffds
               </h3>
             </v-col>
 
